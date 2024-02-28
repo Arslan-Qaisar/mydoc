@@ -16,15 +16,306 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+/* section1 styling starts from here */
+.section1{
+  height: 80vh;
+  background-color: blue;
+  padding: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(https://img.freepik.com/premium-photo/health-concept-stethoscope-black-background-banner-copy-space-3d-illustration_771335-12987.jpg);
+  background-position: center;
+  background-size: cover;
+
 }
+.btn{
+  background-color: black;
+  padding: 12px;
+  border-radius: 16px;
+}
+.btn:hover{
+  background-color: blue;
+  cursor: pointer;
+}
+
+
+/* section2 styling from here */
+
+.section2{
+  display: flex;
+  padding-top: 50px;
+}
+.sec2-right{
+  float: right;
+  width: 50vw;
+  padding: 50px 90px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.sec2-right-line1{
+  font-size: 59px;
+  font-weight: bold;
+}
+.sec2-right-line2{
+  font-weight: bold;
+}
+.buttons{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.sec2-left{
+  float: left;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec2-left img{
+  width: 40vw;
+  height: 70vh;
+}
+
+
+/* Section3 styling from here */
+
+.section3 {
+  padding-top: 70px;
+}
+
+.custmr-cards {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.custm-card {
+  width: 28vw;
+  height: 37vh;
+  border: 2px solid black;
+  color:black;
+  border-radius: 17px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, black 20%, transparent 20%);
+}
+
+.custm-img {
+  border: 1px solid;
+  width: 61px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.custm-img img {
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.sec3-lin1 {
+  padding-top: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+.sec3-lin2 {
+  color: black;
+  font-weight: bold;
+}
+
+.sec3-lin3 {
+  padding-top: 6px;
+}
+
+
+/* Section4 styling from here */
+
+.section4{
+  padding-top: 100px;
+  display: flex;
+  color: white;
+}
+.sec4-left{
+  float: left;
+  width: 60vw;
+  height: 64vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://www.veritasint.com/wp-content/uploads/2023/07/MicrosoftTeams-image-5-scaled.jpg);
+  background-size: cover;
+}
+.sec4-line1{
+  font-size: 43px;
+  font-weight: bold;
+  padding-top: 50px;
+  text-align: center;
+}
+.sec4-line2{
+  font-weight: bold;
+  text-align: center;
+}
+.section4 button{
+  margin: 10px 0px;
+}
+
+.sec4-right{
+  float: right;
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+  margin: 0px 10px;
+}
+form input{
+  width: 47vw;
+  padding: 5px;
+  border: 1px solid black;
+}
+.label{
+  padding-top: 13px;
+}
+.message{
+  padding-top: 13px;
+}
+.msg-input{
+  height: 12vh;
+}
+.buton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnn{
+  width: 48vw;
+}
+
+
+
+.tablle{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+}
+.height{
+  height: 85vh;
+}
+
+/* responsivness */
+
+@media screen and (max-width:600px) {
+  .navv {
+      overflow: hidden;
+      display: flex;
+      height: 65PX;
+      gap: 10px;
+  }
+  .section1{
+    padding: 0;
+  }
+  .main{
+    font-size: 45px;
+  }
+
+  .section2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .sec2-left img {
+    width: 77vw;
+    height: 45vh;
+}
+.sec2-left {
+  width: 70vw;
+}
+.sec2-right {
+    width: auto;
+    padding: 20px;
+}
+.sec2-right-line1 {
+  font-size: 50px;
+}
+
+
+
+
+.custmr-cards{
+  display: flex;
+  flex-direction: column;
+}
+.custm-card {
+  width: 76vw;
+}
+
+
+.section4{
+  display: flex;
+  flex-direction: column;
+}
+.sec4-left {
+  width: auto;
+}
+form input {
+  width: auto;
+}
+.sec4-right {
+  width: auto;
+  display: block;
+  height: auto;
+}
+
+
+.about{
+  padding: 20px;
+}
+
+
+.hiid{
+  display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @layer utilities {
   .text-balance {

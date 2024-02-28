@@ -3,5 +3,9 @@
     "paths": {
       "@/*": ["./*"]
     }
+  },
+  "rules": {
+    ".read": true,
+    ".write": true
   }
 }
